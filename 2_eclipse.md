@@ -180,7 +180,7 @@ src/es/iessaladillo/dam1/ed/u1/
 **Ejemplo con clase en un paquete:**
 
 ```java
-package es.iessaladillo.dam1.ed.u1; // Especificación del paquete
+package es.iesfernandoaguilar.dam1.ed.u1; // Especificación del paquete
 
 public class Integers {
     public static void main(String[] args) {
