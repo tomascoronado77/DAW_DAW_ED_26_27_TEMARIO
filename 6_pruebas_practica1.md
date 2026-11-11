@@ -65,14 +65,14 @@ En esta práctica vamos a separar:
 La estructura será esta:
 
 ```text
-DAM2526_PruebasJUnit
+DAM2627_PruebasJUnit
 │
 ├── src
-│   └── dam2526.pruebas
+│   └── dam2627.pruebas
 │       └── EvaluadorNotas.java
 │
 └── test
-    └── dam2526.pruebas.test
+    └── dam2627.pruebas.test
         └── EvaluadorNotasTest.java
 ```
 
@@ -100,7 +100,7 @@ De esta forma:
 3. Asignarle un nombre, por ejemplo:
 
 ```text
-DAM2526_PruebasJUnit
+DAM2627_PruebasJUnit
 ```
 
 ---
@@ -139,7 +139,7 @@ Al terminar, el proyecto debe tener al menos dos carpetas de código fuente:
 Dentro de `src`, crear el paquete:
 
 ```text
-dam2526.pruebas
+dam2627.pruebas
 ```
 
 ### Paso 4. Crear el paquete de los tests
@@ -147,15 +147,15 @@ dam2526.pruebas
 Dentro de `test`, crear el paquete:
 
 ```text
-dam2526.pruebas.test
+dam2627.pruebas.test
 ```
 
 ### Por qué usamos estos nombres
 
 Es una buena práctica que el paquete de test refleje el paquete del código. Así:
 
-* `dam2526.pruebas` contiene la clase real,
-* `dam2526.pruebas.test` contiene la clase de pruebas.
+* `dam2627.pruebas` contiene la clase real,
+* `dam2627.pruebas.test` contiene la clase de pruebas.
 
 ---
 
@@ -186,10 +186,10 @@ JUnit 5 está organizado en varios componentes. El que usaremos aquí es **JUnit
 
 ### Paso 6. Crear `EvaluadorNotas.java`
 
-Dentro del paquete `dam2526.pruebas`, crear la clase `EvaluadorNotas` y escribir este código:
+Dentro del paquete `dam2627.pruebas`, crear la clase `EvaluadorNotas` y escribir este código:
 
 ```java
-package dam2526.pruebas;
+package dam2627.pruebas;
 
 public class EvaluadorNotas {
 
@@ -278,7 +278,7 @@ Más adelante, al mirar el código, también podremos ver que estos casos ayudan
 
 ### Paso 7. Crear la clase `EvaluadorNotasTest`
 
-Dentro del paquete `dam2526.pruebas.test`:
+Dentro del paquete `dam2627.pruebas.test`:
 
 1. Botón derecho.
 2. Seleccionar:
@@ -293,7 +293,7 @@ Configurar así:
 
 * **Test type**: `New JUnit Jupiter test`
 * **Source folder**: `test`
-* **Package**: `dam2526.pruebas.test`
+* **Package**: `dam2627.pruebas.test`
 * **Name**: `EvaluadorNotasTest`
 
 ### Qué no hay que marcar
@@ -317,7 +317,7 @@ Porque en esta primera práctica queremos entender lo básico sin añadir comple
 Eclipse generará algo parecido a esto:
 
 ```java
-package dam2526.pruebas.test;
+package dam2627.pruebas.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -355,14 +355,14 @@ Por tanto, **hay que sustituir ese código** por nuestras pruebas reales.
 ### Paso 8. Sustituir el código generado por este
 
 ```java
-package dam2526.pruebas.test;
+package dam2627.pruebas.test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import dam2526.pruebas.EvaluadorNotas;
+import dam2627.pruebas.EvaluadorNotas;
 
 public class EvaluadorNotasTest {
 
@@ -417,7 +417,7 @@ public class EvaluadorNotasTest {
 ### 15.1 El paquete
 
 ```java
-package dam2526.pruebas.test;
+package dam2627.pruebas.test;
 ```
 
 Indica que esta clase pertenece al paquete de pruebas.
@@ -432,7 +432,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import dam2526.pruebas.EvaluadorNotas;
+import dam2627.pruebas.EvaluadorNotas;
 ```
 
 #### `import org.junit.jupiter.api.Test;`
@@ -449,7 +449,7 @@ Permite usar directamente `assertEquals(...)` sin escribir el nombre completo de
 
 Permite usar `assertThrows(...)` para comprobar excepciones.
 
-#### `import dam2526.pruebas.EvaluadorNotas;`
+#### `import dam2627.pruebas.EvaluadorNotas;`
 
 Permite usar la clase que vamos a probar.
 
