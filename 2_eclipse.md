@@ -168,13 +168,13 @@ Cuando se crea un paquete, Eclipse genera automáticamente la carpeta correspond
 Por ejemplo, el paquete:
 
 ```
-es.iessaladillo.dam1.ed.u1
+es.iesfernandoaguilar.dam1.ed.u1
 ```
 
 corresponde a la ruta:
 
 ```
-src/es/iessaladillo/dam1/ed/u1/
+src/es/iesfernandoaguilar/dam1/ed/u1/
 ```
 
 **Ejemplo con clase en un paquete:**
@@ -207,16 +207,16 @@ public class Integers {
 
 #### Recomendación práctica (para clase)
 
-En el IES Saladillo, los paquetes pueden seguir esta convención:
+En el IES Fernando Aguilar, los paquetes pueden seguir esta convención:
 
 ```
-es.iessaladillo.dam1.ed.uX
+es.iesfernandoaguilar.dam1.ed.uX
 ```
 
 donde:
 
 * `es` → país (España)
-* `iessaladillo` → centro educativo
+* `iesfernandoaguilar` → centro educativo
 * `dam1` → ciclo y curso
 * `ed` → módulo *Entornos de Desarrollo*
 * `uX` → número de unidad o tema (por ejemplo, `u1`, `u2`, etc.)
